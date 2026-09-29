@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenLeaf Home Services | Your Home, Our Pride.</title>
+  <meta name="description" content="Professional Home Services — Cleaning, Landscaping & More. One reliable team for all your home and property needs.">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- STICKY HEADER -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <div class="logo-mark">GL</div>
+        <div class="logo-text">
+          <span class="business-name">GreenLeaf</span>
+          <span class="business-category">Home Services</span>
+        </div>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <a href="tel:5550000200" class="phone-link">(555) 000-0200</a>
+        <a href="#quote" class="btn btn-primary">Get a Quote</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="hero-content fade-up">
+        <h1>Professional Home Services — Cleaning, Landscaping & More.</h1>
+        <p>One reliable team for all your home and property needs. Upfront pricing, eco-friendly practices, and same-day availability.</p>
+        <div class="hero-ctas">
+          <a href="#quote" class="btn btn-accent">Get a Free Quote</a>
+          <a href="#services" class="btn btn-outline-light">Explore Services</a>
+        </div>
+        <div class="trust-badges">
+          <span class="badge"><span class="star">★</span> 4.8 Rating</span>
+          <span class="badge">2,000+ Happy Homes</span>
+          <span class="badge">Eco-Friendly</span>
+        </div>
+      </div>
+      <div class="hero-visual fade-up" style="animation-delay: 0.2s;">
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+          <rect x="100" y="200" width="200" height="150" fill="var(--card-bg)" rx="10"/>
+          <polygon points="200,80 70,200 330,200" fill="var(--accent)"/>
+          <rect x="175" y="270" width="50" height="80" fill="var(--muted)"/>
+          <rect x="120" y="230" width="40" height="40" fill="var(--soft)"/>
+          <rect x="240" y="230" width="40" height="40" fill="var(--soft)"/>
+          <circle cx="80" cy="320" r="30" fill="var(--accent-2)"/>
+          <circle cx="320" cy="310" r="40" fill="var(--accent-2)"/>
+          <circle cx="360" cy="340" r="25" fill="var(--accent-2)"/>
+          <circle cx="40" cy="340" r="20" fill="var(--accent-2)"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <section class="stats-strip">
+    <div class="container stats-container fade-up">
+      <div class="stat-item">
+        <span class="stat-val">10+</span>
+        <span class="stat-label">Years</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val">2,000+</span>
+        <span class="stat-label">Homes Served</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val">Eco-First</span>
+        <span class="stat-label">Practices</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val">Same-Day</span>
+        <span class="stat-label">Availability</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header text-center fade-up">
+        <h2>Our Services</h2>
+        <p>Comprehensive solutions for every corner of your property.</p>
+      </div>
+      <div class="grid-4 services-grid">
+        <div class="service-card fade-up">
+          <div class="service-icon">🧹</div>
+          <h3>Property Cleaning</h3>
+          <p>Deep cleaning, regular maintenance, move-in/out cleans, post-construction cleanup.</p>
+        </div>
+        <div class="service-card fade-up" style="animation-delay: 0.1s;">
+          <div class="service-icon">🌿</div>
+          <h3>Landscaping & Lawn Care</h3>
+          <p>Lawn mowing, hedging, planting, seasonal yard work, garden design.</p>
+        </div>
+        <div class="service-card fade-up" style="animation-delay: 0.2s;">
+          <div class="service-icon">🔧</div>
+          <h3>HVAC & Home Repairs</h3>
+          <p>Heating, cooling, plumbing, handyman repairs, appliance installation.</p>
+        </div>
+        <div class="service-card fade-up" style="animation-delay: 0.3s;">
+          <div class="service-icon">🗑️</div>
+          <h3>Junk & Waste Removal</h3>
+          <p>Furniture, appliance, yard waste removal. Fast, responsible disposal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-us section alt-bg">
+    <div class="container why-us-container">
+      <div class="why-us-content fade-up">
+        <h2>Friendly, Reliable & Always On Time.</h2>
+        <p>We believe in treating your home with the same care and respect as we would our own. Here's what makes us different:</p>
+        <ul class="benefits-list">
+          <li><span>✓</span> Upfront flat-rate pricing — no hourly surprises</li>
+          <li><span>✓</span> Vetted, background-checked professionals</li>
+          <li><span>✓</span> Eco-friendly products and disposal</li>
+          <li><span>✓</span> All tools and supplies included</li>
+          <li><span>✓</span> Same-day and weekend bookings available</li>
+          <li><span>✓</span> Satisfaction guarantee on every visit</li>
+        </ul>
+      </div>
+      <div class="why-us-image fade-up" style="animation-delay: 0.2s;">
+        <div class="placeholder-img">
+          <span>Trusted Professionals</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="process section" id="process">
+    <div class="container">
+      <div class="section-header text-center fade-up">
+        <h2>How It Works</h2>
+        <p>Simple, transparent, and hassle-free.</p>
+      </div>
+      <div class="grid-3 process-grid">
+        <div class="process-card fade-up">
+          <div class="process-num">01</div>
+          <h3>Book Online or Call</h3>
+          <p>Tell us what you need. We'll confirm your slot within 1 hour.</p>
+        </div>
+        <div class="process-card fade-up" style="animation-delay: 0.1s;">
+          <div class="process-num">02</div>
+          <h3>We Come Prepared</h3>
+          <p>Our team arrives on time with everything needed for the job.</p>
+        </div>
+        <div class="process-card fade-up" style="animation-delay: 0.2s;">
+          <div class="process-num">03</div>
+          <h3>Enjoy Your Space</h3>
+          <p>Clean, green, and fresh — we leave only when you're fully satisfied.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio section alt-bg" id="work">
+    <div class="container">
+      <div class="section-header text-center fade-up">
+        <h2>Our Work</h2>
+        <p>See the difference we can make in your home.</p>
+      </div>
+      <div class="grid-3 portfolio-grid">
+        <div class="portfolio-card fade-up">
+          <div class="portfolio-img"><span class="emoji-large">✨</span></div>
+          <div class="portfolio-content">
+            <h3>Full Home Deep Clean</h3>
+            <p>Residential Cleaning</p>
+          </div>
+        </div>
+        <div class="portfolio-card fade-up" style="animation-delay: 0.1s;">
+          <div class="portfolio-img"><span class="emoji-large">🌳</span></div>
+          <div class="portfolio-content">
+            <h3>Backyard Transformation</h3>
+            <p>Landscaping</p>
+          </div>
+        </div>
+        <div class="portfolio-card fade-up" style="animation-delay: 0.2s;">
+          <div class="portfolio-img"><span class="emoji-large">🚛</span></div>
+          <div class="portfolio-content">
+            <h3>Complete Junk Removal</h3>
+            <p>Property Clearout</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GET A QUOTE -->
+  <section class="quote-section section dark-bg" id="quote">
+    <div class="container">
+      <div class="section-header text-center fade-up">
+        <h2>Get a Quote</h2>
+        <p style="color: var(--soft);">Use our calculator to estimate your service cost.</p>
+      </div>
+      <div class="calculator-card fade-up">
+        <div class="calc-row">
+          <div class="calc-group">
+            <label for="calc-service">Select Service</label>
+            <select id="calc-service">
+              <option value="75">Quick Visit ($75 base)</option>
+              <option value="150" selected>Standard Service ($150 base)</option>
+              <option value="350">Full Home Package ($350 base)</option>
+              <option value="600">Premium Full-Property ($600 base)</option>
+            </select>
+          </div>
+          <div class="calc-group">
+            <label for="calc-size">Property Size</label>
+            <select id="calc-size">
+              <option value="1">Studio / Small (×1)</option>
+              <option value="1.3" selected>Medium Home (×1.3)</option>
+              <option value="1.7">Large Home (×1.7)</option>
+              <option value="2.5">Estate / Commercial (×2.5)</option>
+            </select>
+          </div>
+          <div class="calc-group">
+            <label for="calc-hours">Hours Needed</label>
+            <input type="number" id="calc-hours" value="1" min="1" step="0.5">
+          </div>
+        </div>
+        <div class="calc-result-box">
+          <div class="result-label">Estimated Range:</div>
+          <div class="result-value" id="calc-result">$195 – $263</div>
+        </div>
+        <p class="calc-disclaimer">Disclaimer: This is an estimate. Final pricing may vary based on on-site inspection.</p>
+        <button id="btn-transfer-quote" class="btn btn-accent btn-large">Request Official Quote &rarr;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews section" id="reviews">
+    <div class="container">
+      <div class="section-header text-center fade-up">
+        <h2>What Our Clients Say</h2>
+        <p>Real feedback from the community we serve.</p>
+      </div>
+      <div class="grid-3 reviews-grid">
+        <div class="review-card fade-up">
+          <div class="stars">★★★★★</div>
+          <p class="quote">"GreenLeaf has been cleaning our home for over a year and I wouldn't trust anyone else. They're thorough, respectful, and the house smells amazing every time they leave."</p>
+          <div class="reviewer">
+            <strong>— Emma W.</strong>
+            <span>Portland, OR</span>
+          </div>
+        </div>
+        <div class="review-card fade-up" style="animation-delay: 0.1s;">
+          <div class="stars">★★★★★</div>
+          <p class="quote">"They completely redesigned our backyard — from bare dirt to a beautiful garden in just two days. Affordable, creative, and the crew was an absolute pleasure to work with."</p>
+          <div class="reviewer">
+            <strong>— The Henderson Family</strong>
+            <span>Salem, OR</span>
+          </div>
+        </div>
+        <div class="review-card fade-up" style="animation-delay: 0.2s;">
+          <div class="stars">★★★★★</div>
+          <p class="quote">"Called at 8am about a big junk removal job and they had a crew there by noon the same day. Everything was gone within an hour. Can't recommend highly enough!"</p>
+          <div class="reviewer">
+            <strong>— David T.</strong>
+            <span>Beaverton, OR</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact section dark-bg" id="contact">
+    <div class="container contact-container">
+      <div class="contact-info fade-up">
+        <h2>Let's Talk About Your Project</h2>
+        <p>Ready to upgrade your property? Get in touch with our team today to schedule your service or request a firm quote.</p>
+        <div class="info-items">
+          <div class="info-item">
+            <span class="icon">📍</span>
+            <div>
+              <strong>Address</strong>
+              <p>456 Oak Street, Your City, State</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon">📞</span>
+            <div>
+              <strong>Phone</strong>
+              <p><a href="tel:5550000200">(555) 000-0200</a></p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon">✉️</span>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:hello@greenleafhome.com">hello@greenleafhome.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-wrap fade-up" style="animation-delay: 0.2s;">
+        <form id="contact-form" class="contact-form card">
+          <h3>Request a Service</h3>
+          <div class="form-group">
+            <label for="form-name">Full Name *</label>
+            <input type="text" id="form-name" required>
+          </div>
+          <div class="form-group">
+            <label for="form-phone">Phone *</label>
+            <input type="tel" id="form-phone" required>
+          </div>
+          <div class="form-group">
+            <label for="form-email">Email Address *</label>
+            <input type="email" id="form-email" required>
+          </div>
+          <div class="form-group">
+            <label for="form-service">Service Needed *</label>
+            <select id="form-service" required>
+              <option value="">Select a service...</option>
+              <option value="Cleaning">Cleaning</option>
+              <option value="Landscaping">Landscaping</option>
+              <option value="HVAC/Repairs">HVAC/Repairs</option>
+              <option value="Junk Removal">Junk Removal</option>
+              <option value="Multiple Services">Multiple Services</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="form-estimate">Estimated Budget / Calculator Result</label>
+            <input type="text" id="form-estimate" placeholder="e.g. $195 - $263">
+          </div>
+          <div class="form-group">
+            <label for="form-message">Job Details *</label>
+            <textarea id="form-message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-accent btn-block" id="form-submit">Submit Request</button>
+          <div id="form-status" class="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="footer-col brand-col">
+        <div class="logo-text footer-logo">
+          <span class="business-name">GreenLeaf</span>
+        </div>
+        <p>Your Home, Our Pride. Professional cleaning, landscaping, and home services you can rely on.</p>
+      </div>
+      <div class="footer-col links-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">How It Works</a></li>
+          <li><a href="#work">Portfolio</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="footer-col newsletter-col">
+        <h4>Stay Updated</h4>
+        <p>Subscribe for seasonal maintenance tips and exclusive offers.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" id="nl-email" placeholder="Your email address" required>
+          <button type="submit" id="nl-submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        <div id="nl-status" class="form-status small"></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container flex-between">
+        <p>&copy; 2026 GreenLeaf Home Services. All rights reserved.</p>
+        <p class="footer-badges">Eco-Friendly &middot; Locally Owned</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

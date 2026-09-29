@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoadReady Auto & Towing | Less Downtime. More Road Time.</title>
+  <meta name="description" content="Expert Auto Repair & 24/7 Towing. ASE-Certified technicians, transparent diagnostics, and fast-response towing.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- EmailJS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      🚗 24/7 Emergency Towing — Call <a href="tel:5550000300">(555) 000-0300</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo-area">
+        <div class="logo-mark">RR</div>
+        <div class="logo-text">
+          <span class="business-name">RoadReady</span>
+          <span class="business-category">Auto & Towing</span>
+        </div>
+      </a>
+      
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-right">
+        <span class="dispatch-badge">24/7 Dispatch</span>
+        <a href="tel:5550000300" class="header-phone">(555) 000-0300</a>
+        <a href="#quote" class="btn btn-primary header-btn">Get a Quote</a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Expert Auto Repair & 24/7 Towing — When You Need It Most.</h1>
+          <p>ASE-Certified technicians, transparent diagnostics, and fast-response towing. We get you back on the road.</p>
+          <div class="hero-ctas">
+            <a href="#quote" class="btn btn-primary">Get a Free Quote</a>
+            <a href="tel:5550000300" class="btn btn-secondary call-now-btn">Call Dispatch Now</a>
+          </div>
+          <div class="trust-badges">
+            <span class="badge">✓ ASE Certified</span>
+            <span class="badge">✓ 24/7 Dispatch</span>
+            <span class="badge">✓ 24-Month Warranty</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
+            <defs>
+              <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <circle fill="var(--muted)" cx="2" cy="2" r="2" opacity="0.4"></circle>
+              </pattern>
+            </defs>
+            <rect width="200" height="200" fill="url(#dots)" x="280" y="20"></rect>
+            <path d="M50 150 L400 150 L450 350 L50 350 Z" fill="var(--accent)" opacity="0.1" />
+            <rect x="100" y="100" width="300" height="200" rx="20" fill="var(--deep)" stroke="var(--accent)" stroke-width="4"/>
+            <!-- Stylized Car -->
+            <path d="M140 220 L180 160 L320 160 L360 220 L380 220 L380 260 L120 260 L120 220 Z" fill="#ffffff"/>
+            <circle cx="180" cy="260" r="25" fill="var(--accent-2)"/>
+            <circle cx="320" cy="260" r="25" fill="var(--accent-2)"/>
+            <circle cx="180" cy="260" r="10" fill="var(--deep)"/>
+            <circle cx="320" cy="260" r="10" fill="var(--deep)"/>
+            <path d="M190 170 L310 170 L340 210 L160 210 Z" fill="var(--soft)"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Strip -->
+    <section class="stats-strip">
+      <div class="container stats-inner">
+        <div class="stat-item">
+          <div class="stat-value">ASE</div>
+          <div class="stat-label">Certified Techs</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">24/7</div>
+          <div class="stat-label">Live Dispatch</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">24-Mo</div>
+          <div class="stat-label">Parts Warranty</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">1000+</div>
+          <div class="stat-label">Vehicles Served</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header center">
+          <h2>Our Core Services</h2>
+          <p>Comprehensive solutions for personal vehicles, fleets, and emergencies.</p>
+        </div>
+        <div class="service-grid">
+          <div class="service-card">
+            <h3>Auto Diagnostics & Repair</h3>
+            <p>Engine, brakes, electrical, transmission. Accurate diagnostics and honest, upfront repair approvals.</p>
+          </div>
+          <div class="service-card">
+            <h3>Fleet & Truck Services</h3>
+            <p>Heavy-duty maintenance and repairs built around maximising uptime for fleets, semis, and work trucks.</p>
+          </div>
+          <div class="service-card">
+            <h3>24/7 Towing & Recovery</h3>
+            <p>Roadside assistance, jump starts, flat tire changes, and safe flatbed transport. Anywhere, anytime.</p>
+          </div>
+          <div class="service-card">
+            <h3>Detailing & Inspection</h3>
+            <p>Professional interior/exterior detailing, pre-purchase inspections, and multi-point safety checks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-choose-us" class="section soft-bg">
+      <div class="container">
+        <div class="section-header">
+          <h2>Honest Repairs. Fair Prices. Fast Service.</h2>
+          <p>We pride ourselves on transparency and quality workmanship.</p>
+        </div>
+        <div class="benefits-grid">
+          <div class="benefit-item">
+            <span class="check">✓</span>
+            <p>Upfront written repair approval before any work</p>
+          </div>
+          <div class="benefit-item">
+            <span class="check">✓</span>
+            <p>OEM and quality aftermarket parts only</p>
+          </div>
+          <div class="benefit-item">
+            <span class="check">✓</span>
+            <p>Digital vehicle inspection reports via text/email</p>
+          </div>
+          <div class="benefit-item">
+            <span class="check">✓</span>
+            <p>ASE-certified technicians on every job</p>
+          </div>
+          <div class="benefit-item">
+            <span class="check">✓</span>
+            <p>24-month / 24,000-mile parts & labour warranty</p>
+          </div>
+          <div class="benefit-item">
+            <span class="check">✓</span>
+            <p>Fast-response towing with live ETA tracking</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="process" class="section">
+      <div class="container">
+        <div class="section-header center">
+          <h2>How It Works</h2>
+          <p>A streamlined process to get your vehicle back in top shape.</p>
+        </div>
+        <div class="process-steps">
+          <div class="step">
+            <div class="step-number">01</div>
+            <h3>Check In or Call</h3>
+            <p>Drop by, call dispatch, or book online. Share your symptoms or location.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">02</div>
+            <h3>Honest Diagnostics</h3>
+            <p>We pinpoint the issue and give you clear repair options with written pricing.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">03</div>
+            <h3>Back on the Road</h3>
+            <p>Approve only what you need. We get it done fast, with a warranty to back it up.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="work" class="section soft-bg">
+      <div class="container">
+        <div class="section-header center">
+          <h2>Recent Work</h2>
+          <p>See what goes on in our bays and on the road.</p>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-card">
+            <div class="portfolio-img bg-1"></div>
+            <div class="portfolio-info">
+              <h4>Engine Overhaul</h4>
+              <p>Major Repair</p>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <div class="portfolio-img bg-2"></div>
+            <div class="portfolio-info">
+              <h4>Fleet Preventive Service</h4>
+              <p>Fleet Maintenance</p>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <div class="portfolio-img bg-3"></div>
+            <div class="portfolio-info">
+              <h4>Emergency Roadside Recovery</h4>
+              <p>Towing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get a Quote -->
+    <section id="quote" class="section deep-bg">
+      <div class="container quote-container">
+        <div class="quote-text">
+          <h2>Get a Quote</h2>
+          <p>Use our interactive calculator to get a rough estimate for your service. For a final, written quote, submit your request to our team.</p>
+        </div>
+        <div class="quote-calculator">
+          <div class="form-group">
+            <label for="calc-service">Select Service</label>
+            <select id="calc-service">
+              <option value="89">Basic Tune-Up / Oil Change</option>
+              <option value="250">Diagnostics + Repair</option>
+              <option value="800">Major Mechanical Repair</option>
+              <option value="2000">Fleet Service</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="calc-vehicle">Vehicle Type</label>
+            <select id="calc-vehicle">
+              <option value="1">Car / Sedan</option>
+              <option value="1.15">Van / Minivan</option>
+              <option value="1.2">SUV / Truck</option>
+              <option value="1.8">Heavy Truck / Semi</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="calc-qty">Number of Vehicles</label>
+            <input type="number" id="calc-qty" value="1" min="1">
+          </div>
+          
+          <div class="calc-result">
+            <div class="result-label">Estimated Range:</div>
+            <div class="result-value" id="calc-output">$89 – $115</div>
+          </div>
+          <p class="calc-disclaimer">Disclaimer: Prices are estimates only. Final quote depends on exact parts and labor required.</p>
+          <button id="btn-request-quote" class="btn btn-primary full-width">Request Official Quote &rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="section">
+      <div class="container">
+        <div class="section-header center">
+          <h2>Customer Reviews</h2>
+          <p>Don't just take our word for it.</p>
+        </div>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"RoadReady diagnosed what two other shops couldn't in 10 minutes. Fair pricing, no upselling, and my car was ready same day. This is my shop for life now."</p>
+            <div class="reviewer">
+              <span class="name">— Carlos M.</span>
+              <span class="city">Detroit, MI</span>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Got stranded at midnight on the highway. Called RoadReady and they had a tow truck to me in under 25 minutes. Couldn't be more grateful — professional and reassuring the whole way."</p>
+            <div class="reviewer">
+              <span class="name">— Lisa & Tom B.</span>
+              <span class="city">Dearborn, MI</span>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"We run a fleet of 12 vans and RoadReady handles all our maintenance. Downtime has dropped massively since we switched. Honest, reliable, and they always fit us in."</p>
+            <div class="reviewer">
+              <span class="name">— ProLogix Transport</span>
+              <span class="city">Ann Arbor, MI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="section deep-bg">
+      <div class="container contact-container">
+        <div class="contact-info">
+          <h2>Contact Us</h2>
+          <p>Whether you need an estimate or emergency towing, our team is ready to help.</p>
+          <div class="emergency-box">
+            <strong>Emergency? Call us directly — we answer 24/7</strong>
+            <a href="tel:5550000300" class="big-phone">(555) 000-0300</a>
+          </div>
+          <ul class="contact-details">
+            <li><strong>Email:</strong> dispatch@roadreadyauto.com</li>
+            <li><strong>Address:</strong> 789 Highway Drive, Your City, State</li>
+          </ul>
+        </div>
+        <div class="contact-form-wrapper">
+          <form id="contact-form" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Needed</label>
+              <select id="service" required>
+                <option value="Auto Repair">Auto Repair</option>
+                <option value="Towing & Recovery">Towing & Recovery</option>
+                <option value="Fleet Service">Fleet Service</option>
+                <option value="Detailing">Detailing</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="vehicle">Vehicle Make & Model</label>
+              <input type="text" id="vehicle" required>
+            </div>
+            <div class="form-group">
+              <label for="form-estimate">Estimated Budget / Value</label>
+              <input type="text" id="form-estimate">
+            </div>
+            <div class="form-group">
+              <label for="message">Issue Description</label>
+              <textarea id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submit-btn">Submit Request</button>
+            <div id="form-status" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo-area" style="margin-bottom: 1rem;">
+          <div class="logo-mark" style="width: 35px; height: 35px; font-size: 1rem;">RR</div>
+          <div class="logo-text" style="color: var(--ink);">
+            <span class="business-name" style="font-size: 1.2rem;">RoadReady</span>
+          </div>
+        </div>
+        <p>Expert auto repair, fleet maintenance, and 24/7 towing services. Less Downtime. More Road Time.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">How It Works</a></li>
+          <li><a href="#quote">Get a Quote</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h3>Newsletter</h3>
+        <p>Subscribe for seasonal maintenance tips and exclusive discounts.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" id="newsletter-email" placeholder="Email Address" required>
+          <button type="submit" class="btn btn-primary">Join</button>
+        </form>
+        <div id="newsletter-status" class="form-status" style="margin-top: 0.5rem; font-size: 0.9rem;"></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container bottom-inner">
+        <p>&copy; 2026 RoadReady Auto & Towing. All rights reserved.</p>
+        <p>ASE Certified &middot; Licensed &middot; Bonded</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
